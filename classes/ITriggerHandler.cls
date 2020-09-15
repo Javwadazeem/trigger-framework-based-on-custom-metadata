@@ -1,5 +1,5 @@
 /****************************************************************************************************************************************************************
-Interface Name:     IBIIB_TriggerHandler
+Interface Name:     ITriggerHandler
 Description:        All Methods should be implemented by the TriggerHandler Class.
 Developer:          Javwad Azeem
 Date:               17/07/2020
@@ -10,17 +10,8 @@ Developer                 Date                   Description
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 *******************************************************************************************************************************************************************/
-public Interface IBIIB_TriggerHandler
+public Interface ITriggerHandler
 {    
-    //Trigger Iterators
-    void beforeInsertIterator(List<SObject> newItems);
-    
-    void beforeUpdateIterator(List<SObject> newItems, Map<Id, SObject> newMap, Map<Id, SObject> oldMap);
-    
-    void afterInsertIterator(List<SObject> newItems, Map<Id, SObject> newMap);
-    
-    void afterUpdateIterator(List<SObject> newItems, Map<Id, SObject> newMap, Map<Id, SObject> oldMap);
-    
     //Trigger Events
     void BeforeInsert(List<SObject> newItems);
  
