@@ -1,15 +1,7 @@
-public virtual class BIIB_TriggerHandler implements IBIIB_TriggerHandler
+public virtual class TriggerHandler implements ITriggerHandler
 {
     public virtual Boolean IsDisabled(){return false;}
-	
-	//Iterator Methods
-    public virtual void beforeInsertIterator(List<SObject> newItems) {}
 
-    public virtual void beforeUpdateIterator(List<SObject> newItems, Map<Id, SObject> newMap, Map<Id, SObject> oldMap) {}
-    
-    public virtual void afterInsertIterator(List<SObject> newItems, Map<Id, SObject> newMap) {}
-    
-    public virtual void afterUpdateIterator(List<SObject> newItems, Map<Id, SObject> newMap, Map<Id, SObject> oldMap) {}
     //Trigger Context Methods
     public virtual void BeforeInsert(List<SObject> newItems) {}
     
