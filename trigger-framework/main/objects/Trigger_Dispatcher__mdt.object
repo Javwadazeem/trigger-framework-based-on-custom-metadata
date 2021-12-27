@@ -32,16 +32,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Prevent_Recursion__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>If this checkbox is true then this handler will be called once per event.</description>
-        <externalId>false</externalId>
-        <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Check, if you want to prevent this handler execute multiple times.</inlineHelpText>
-        <label>Prevent Recursion</label>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Trigger_Handler_Class_Name__c</fullName>
         <description>Add the class name to call from trigger.</description>
         <externalId>false</externalId>

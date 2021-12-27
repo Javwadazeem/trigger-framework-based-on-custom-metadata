@@ -20,7 +20,8 @@ public class TriggerDispatcher
         if(m_MapTriggerDispatcherByObjectName == null)
         {
             m_MapTriggerDispatcherByObjectName = new Map<String, List<Trigger_Dispatcher__mdt>>();
-            for(Trigger_Dispatcher__mdt objRecord : [Select Active__c, Prevent_Recursion__c,Trigger_Handler_Class_Name__c, Object_Name__c from Trigger_Dispatcher__mdt Order By Ordinal__c ASC NULLS LAST])
+            for(Trigger_Dispatcher__mdt objRecord : [Select Active__c, Trigger_Handler_Class_Name__c, Object_Name__c 
+                                                    from Trigger_Dispatcher__mdt Order By Ordinal__c ASC NULLS LAST])
             {
                 if(!m_MapTriggerDispatcherByObjectName.containsKey(objRecord.Object_Name__c))
                     m_MapTriggerDispatcherByObjectName.put(objRecord.Object_Name__c, new List<Trigger_Dispatcher__mdt>());
